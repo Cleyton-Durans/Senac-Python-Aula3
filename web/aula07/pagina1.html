@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula7</title>
+    <!--Css do bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- script do bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        .bg1 {
+            background-color: aqua;
+        }
+
+        .bg2 {
+            background-color: rgb(255, 102, 0);
+        }
+
+        .bg3 {
+            background-color: chartreuse;
+        }
+
+        .bg4 {
+            background-color: rgb(110, 123, 235);
+        }
+
+        .bg5 {
+            background-color: rgb(212, 38, 111);
+        }
+
+        .bg6 {
+            background-color: rgb(252, 247, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row"> <!-- Início 1° linha -->
+            <div class="col-12 text-center">
+                <h1>Bem vindo ao bootstrap!!!</h1>
+            </div>
+        </div> <!-- Fecha 2º linha! -->
+
+        <div class="row"> <!-- Início 2° linha -->
+            <div class="col-12 col-md-8 col col-lg-8 bg1">
+                Topo Direito!
+            </div>
+            <div class="col-12 col-md-4 col col-lg-4 bg2">
+                Topo Esquerdo!
+            </div>
+
+        </div><!-- Fecha 2º linha! -->
+        <div class="row">
+
+            <div class="col-6 col-md-4 col-lg-4 bg5">
+                Notícia 1
+            </div>
+
+            <div class="col-6 col-md-8 col-lg-4 bg6">
+                Notícia 2
+            </div>
+
+            <div class="d-none d-sm-block col-lg-4 bg4"> <!-- Explicação:
+                d-none: Oculta o elemento por padrão (em todos os tamanhos).
+                d-sm-block: Mostra o elemento novamente a partir do breakpoint sm (≥576px).
+                Isso faz com que o conteúdo fique oculto em xs (telinhas de celular) e visível em qualquer tamanho maior (sm, md, lg, xl, etc). -->
+                
+                Notícia 3
+            </div>
+        </div><!-- Fecha 3º linha! -->
+    </div><!--Fecha o container-->
+
+</body>
+
+</html>

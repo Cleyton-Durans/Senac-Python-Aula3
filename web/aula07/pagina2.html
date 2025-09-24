@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bootstrap - JavaScrip - Jquery </title>
+    <!--Css do bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- script do bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid" style="margin-top: 1%;">
+        <div class="row"> <!-- Início Menu -->
+            <div class="col-3 ">
+                <!-- <h1> Esquerda</h1> -->
+                <ul class="nav nav-pills flex-column" id="menu">
+                    <li class"nav-item">
+                        <a href="#" class="nav-link active"> <i class="bi bi-house-fill "></i> Home </a>
+                    </li>
+                    <li class"nav-item">
+                        <a href="#" class="nav-link "> <i class="bi bi-award-fill"></i> Reversa </a>
+                    </li>
+                    <li class"nav-item">
+                        <a href="#" class="nav-link "> <i class="bi bi-person-rolodex"></i> Contato </a>
+                    </li>
+
+                </ul>
+            </div> <!-- Fecha Menu -->
+
+            <div class="col-9"> <!-- Inicia Conteudo -->
+                <div id="tela1">
+                    <h1> Bem vindo ao bootstrap </h1>
+                    <spam> Sistema de reservas </spam>
+                    <div id="alunos">
+                        <h3> alunos </h3>
+                        <ul>
+                            <li> Durans </li>
+                            <li> Luiz </li>
+                            <li> Lucas </li>
+                            <li> Douglas </li>
+                        </ul>
+                    </div> <!-- Fecha divisão de alunos -->
+
+                    <br/><br/>
+                    <i class="bi bi-plus-circle add" style="cursor: pointer;">
+                        <p id="texto" style="display: none;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                 </i>
+                    
+                </div><br/>
+
+                <div id="reserva">
+                    <h2 class="border-botom pb-2"> RESERVA DE CLIENTES</h2></div><hr>
+                    <form>
+                        <label for="dtinicio" class="form-label"> Início </label>
+                        <input type="text" id="dtinicio" class="form-control">  </label>
+                        <br/><br/>
+                        <label for="dtfim" class="form-label"> Fim</label>
+                        <input type="text" id="dtfim" class="form-control">  </label>
+                    </form>
+                </div>
+                
+            </div> <!-- Fecha Conteudo -->
+        </div> <!-- Fecha 1º linha! -->
+
+    </div><!--Fecha o container-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- JQuery UI 
+    <Script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"> </Script> -->
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>   // Inicio a função de carregamento
+            $(function () {
+                var nome = 'Durans';
+                // Exibe no console uma mensagem com o nome
+                console.log('pagina1 - jQuery ' + nome);
+                // Seleciona o elemento <spam> e muda sua cor para vermelho
+                $("spam").css("color", "red");
+                // Faz a div #alunos aparecer com efeito de fade em 3 segundos
+                $("#alunos").hide().fadeIn(2000);
+                $("#menu").hide().fadeIn(2000);
+                // Adiciona um evento de clique no ícone com classe .add
+                $(".add").on('click', function(){
+                // Alterna a exibição do texto com animação, muda tamanho e cor da fonte
+                $("#texto").toggle(1000).css("font-size" , "20px");
+                });
+    
+            }); //Finalizo a função de carregamento
+    
+        </script>
+</body>
+
+</html>

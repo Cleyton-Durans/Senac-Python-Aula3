@@ -1,0 +1,68 @@
+#fundo{
+    background-image: url('img/background.jpg');
+    background-size: cover;       /* faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* evita repetição da imagem */
+    background-position: center;  /* centraliza a imagem */
+}
+
+#fundo {
+  width: 100%;
+  height: 100%;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#geral {
+    width: 980px;
+    height: auto;
+    margin: auto; /* CENTRALIZAR A PÁGINA NO CENTRO */ 
+    font-size: medium;
+    font-family: monospace;
+}
+
+#topo {
+    width: 980px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+#banner {
+    width: 980px;
+    height: auto;
+    background-color: bisque;
+    border : solid 2px black; 
+    margin-top: 10px; /* "10px 0px 10px 0px" usado para configurar todos os lados --> top, height, botto e left */
+    text-align: center;
+}
+
+#title_banner{
+    text-align: center;
+}
+
+#imagem_banner{
+    width: 850px;
+    height: 600px;
+    
+}
+
+#esquerda {
+    width: 440px;
+    height: 300px;
+    background-color: rgb(226, 125, 29);
+    border : solid 2px black; 
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+}
+
+#direita {
+    width: 440px;
+    height: 300px;
+    background-color: rgb(172, 19, 19);
+    border : solid 2px black; 
+    margin-top: 10px;
+    float: right;
+    text-align: center;
+    
+}

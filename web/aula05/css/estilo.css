@@ -1,0 +1,102 @@
+
+#geral {
+    width: 80%;
+    height: auto;
+    margin: auto; /* CENTRALIZAR A PÁGINA NO CENTRO */ 
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    /*z-index: 1000; */
+    /* filter: blur(5px); Para defocar */
+}
+
+#logoimg{
+    height: 84px;
+    width: 200px;
+    margin: 25px auto;
+    padding-top: 10px;
+    display: block;
+}
+
+#menu{
+    text-align: center;
+    height: 50px;
+    background-color: hsl(0, 17%, 89%);
+}
+
+
+.menu a:hover {
+    color: slategray;              /* Cor ao passar o mouse */
+    text-decoration: underline;  /* Opcional: sublinhado ao hover */
+    filter: blur(0.7px);
+}
+
+.menu a:after {
+    content: "|";              /* Cor ao passar o mouse */
+    color: #333;
+}
+
+
+#bannerimg{
+    height: 800px;
+    width: 100%;
+    border: solid 5px #333;
+    padding: 0%;
+    margin: 0px;
+}
+
+
+#rodape{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    min-height: auto;
+    float:left;
+    background-color: #2B2E3D;
+    padding: 15px 0;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#esquerda {
+    width: 65%;
+    height: auto;
+    background-color: rgb(100, 54, 54);
+    color: aliceblue;
+    border : solid 2px black; 
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+}
+
+#direita {
+    width: 30%;
+    height: auto;
+    background-color: rgb(100, 54, 54);
+    color: aliceblue;
+    border : solid 2px black; 
+    margin-top: 10px;
+    float: right;
+    text-align: center;
+    
+}
+
+/*  MÉDIA QUERY -CSS3 */
+
+div#anunciotable{
+    width: 100%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    background-color: burlywood;
+    text-align: center;
+    color:azure;
+    display: none;
+}
+
+@media screen and (min-width: 668px) and (max-width:768px){
+    div#anunciotable{
+        display:block;
+    }
+}

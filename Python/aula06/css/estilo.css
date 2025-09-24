@@ -1,0 +1,73 @@
+
+#geral {
+    width: 100%;
+    height: auto;
+    margin: auto; /* CENTRALIZAR A PÁGINA NO CENTRO */ 
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    z-index: 1000; */
+    /* filter: blur(5px); Para defocar */
+}
+
+header#logo{
+    width: 100%;
+    background-color: aquamarine;
+}
+
+figure#logo_topo{
+    width: 250px;
+    height: 270px;
+    margin: auto;
+   
+}
+
+#logoimg{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50%;
+    
+}
+
+#conteudo_banner{
+    height:500px;
+    width:100%;
+    background-color: antiquewhite;
+}
+
+#banner img{
+    width: 70%;
+    height: 500px;
+    float: right;
+}
+
+#menu{
+    float: left;
+    height:auto;
+}
+
+#menu a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    margin: 0 30px;
+}
+
+.menu a:hover {
+    color: rgb(32, 103, 173);              /* Cor ao passar o mouse */
+    text-decoration: underline;  /* Opcional: sublinhado ao hover */
+    filter: blur(0.7px);
+}
+#rodape{
+    height: 18px;
+    width: 100%;
+    text-align: center;
+    min-height: auto;
+    float:left;
+    background-color: #2B2E3D;
+    padding: 15px 0;
+    color: aliceblue;
+    font-size: 18px;
+    margin-top: 15px;
+}
